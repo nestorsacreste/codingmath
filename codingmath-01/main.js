@@ -8,6 +8,10 @@ window.onload = function() {
     context.beginPath();
     context.moveTo(Math.random() * width, Math.random() * height);
     context.lineTo(Math.random() * width, Math.random() * height);
+    var r = Math.round(Math.random() * 255),
+        g = Math.round(Math.random() * 255),
+        b = Math.round(Math.random() * 255);
+    context.strokeStyle = "rgb(" + r + ", " + g + ", " + b + ")" ;
     context.stroke();
   }
 };
